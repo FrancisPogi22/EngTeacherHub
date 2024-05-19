@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none !important;
+    text-decoration: none !important;
+    list-style: none !important;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --color-main: #0f6a6a;
+    --color-secondary: #c4e8e8;
+    --color-option: #7ac4c4;
+    --color-grey: #888888;
+    --color-white: #ffffff;
+}
+
+img {
+    display: block;
+}
+
+p {
+    font-size: 18px;
+    margin: 0;
+    left: 0;
+    line-height: 2em;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: var(--color-main);
+}
+
+#header .wrapper {
+    max-width: 1640px;
+}
+
+#header .header-con {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 25px 30px;
+}
+
+#header .header-con li a {
+    color: var(--color-white);
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+#header .header-con li:not(:last-child):after {
+    position: relative;
+    padding: 0 10px;
+    content: "|";
+    height: 100%;
+    color: var(--color-white);
+}
+
+#header .mobile-btn {
+    display: none;
+}
+
+.btn-primary {
+    padding: 10px 48px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    background: var(--color-option);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#register .wrapper {
+    max-width: 1440px;
+}
+
+#register .register-con {
+    padding: 100px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#register .password-toggle,
+#register .Cpassword-toggle {
+    position: relative;
+}
+
+#register .password-toggle i,
+#register .Cpassword-toggle i {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
+}
+
+#register form {
+    width: 500px;
+    background: var(--color-secondary);
+    padding: 45px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#register form h2 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+#register .register-details-con h2 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.btn-con {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.field-con input,
+.field-con select {
+    padding: 15px;
+    border: 1px solid var(--color-grey);
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.field-con input::placeholder,
+.field-con select::placeholder {
+    font-size: 12px;
+}
+
+#register .register-details-con {
+    width: 725px;
+}
+
+#welcome .wrapper {
+    max-width: 1440px;
+}
+
+#welcome .welcome-con {
+    padding: 200px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#welcome .password-toggle,
+#welcome .Cpassword-toggle {
+    position: relative;
+}
+
+#welcome .password-toggle i,
+#welcome .Cpassword-toggle i {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
+}
+
+#welcome form {
+    width: 500px;
+    background: var(--color-secondary);
+    padding: 45px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#welcome form h2 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+#welcome .welcome-details-con h2 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+#welcome .welcome-details-con {
+    width: 725px;
+}
+
+#profile .wrapper {
+    max-width: 1440px;
+}
+
+#profile .profile-con {
+    padding: 100px 0;
+}
+
+#profile .profile-con h2 {
+    margin-bottom: 50px;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+#profile .profile-widget {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+#profile .profile-widget img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#profile .profile-details h4 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#profile .profile-details p {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-grey);
+    margin: 0;
+}
+
+#profile .profile-details button:first-of-type {
+    margin-top: 30px;
+}
+
+#teacher .wrapper,
+#client .wrapper,
+#inquiries .wrapper {
+    max-width: 1440px;
+}
+
+#teacher .teacher-con,
+#client .client-con,
+#inquiries .inquiries-con {
+    padding: 100px 0;
+}
+
+#teacher .teacher-con h2,
+#inquiries .inquiries-con h2,
+#client .client-con h2 {
+    font-weight: 900;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+#teacher .teacher-list-con,
+#inquiries .inquiries-list,
+#client .client-list-con {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+#teacher .teacher-widget,
+#inquiries .inquiries-widget,
+#client .client-widget {
+    text-align: center;
+    background: var(--color-secondary);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+#teacher .teacher-widget img,
+#inquiries .inquiries-widget img,
+#client .client-widget img {
+    width: 313px;
+    height: 231px;
+    margin-bottom: 10px;
+}
+
+#teacher .teacher-details p {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    color: var(--color-grey);
+}
+
+#teacher .teacher-widget button,
+#client .client-widget button {
+    margin-top: 30px;
+}
+
+.filter-con {
+    display: flex;
+    gap: 20px;
+}
+#teacher .header-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#teacher .header-con select{
+    width: 200px;
+}
+
+#profileBtn {
+    background: transparent;
+    color: var(--color-white);
+    border: none;
+}
